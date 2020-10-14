@@ -64,8 +64,9 @@ class WeightedQuickUnion():
             
     def union(self,p,q):
         """
-        Sets the value of root node of q as with the root of p. All connected components are made to come 
-        under the same tree using this operation.
+        Sets the value of root node of smaller tree with the root node of larger tree.
+        All connected components are made to come under the same tree using this operation.
+        Optimization makes the tree flatter
         
         Keyword Arguments:
         

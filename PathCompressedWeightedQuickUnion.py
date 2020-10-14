@@ -24,6 +24,7 @@ class PathCompressedWeightedQuickUnion():
     def root(self, node):
         """
         Returns the ultimate parent node of the connected component that the given node belongs to.
+        In addition, at every step makes the tree flatter by assigning the grandparent as the parent.
         
         Keyword Argumets:
         node (int): Component identifier

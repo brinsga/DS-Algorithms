@@ -1,3 +1,5 @@
+# Reference - https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf
+
 class QuickFind():
     """
     QuickFind Class provides an eager approach to solve the Union-Find Problem

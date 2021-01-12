@@ -80,7 +80,7 @@ class WeightedQuickUnion():
         proot = self.root(self.id[p])
         qroot = self.root(self.id[q])
         
-        if proot < qroot:
+        if self.size[proot] < self.size[qroot]:
             self.id[proot] = qroot
             self.size[qroot]+=self.size[proot]
         else:
